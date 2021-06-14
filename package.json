@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "tsc && node dist/main.js",
+    "serve": "tsc-watch --onSuccess \"node ./dist/main.js\""
+  },
+  "devDependencies": {
+    "@types/csv-parse": "^1.2.2",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@fast-csv/format": "^4.3.5",
+    "@fast-csv/parse": "^4.3.6",
+    "csv-parse": "^4.16.0",
+    "fast-csv": "^4.3.6"
+  }
+}
