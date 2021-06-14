@@ -29,7 +29,8 @@ A base de dados escolhida foi retirada das bases de dados padrões no software W
 
 A base de dados conta com 768 instancias de dados, desbalanceados com 500 das classes como '_tested_negative_' e 268 '_tested_positive_'. A base foi analisada no Weka e segue abaixo.
 
-![Projeto%20de%20intelige%CC%82ncia%20artificial%20ebb220eb62c34231869961c42e082000/Untitled.png](Projeto%20de%20intelige%CC%82ncia%20artificial%20ebb220eb62c34231869961c42e082000/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/51174217/121831795-c8c22d80-cc9e-11eb-8b77-a3bc2ec550f4.png)
+
 
 ### Atributos
 
