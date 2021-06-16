@@ -10,7 +10,7 @@ import { readCsv } from "./utils/readCsv";
   const database = destructCSV(diabetesDatabase);
   const test = destructCSV(diabetesTest);
 
-  const Knn = new KNN(9, database.data, database.labels);
+  const Knn = new KNN(7, database.data, database.labels);
 
   const KnnTest = new KnnTester({
     Knn,

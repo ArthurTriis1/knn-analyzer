@@ -40,21 +40,18 @@ class KNN {
       const thisDistance = calcDistance(point, otherPoint);
 
       if (!maxDistanceInMap || thisDistance < maxDistanceInMap) {
-        // Only add an item if it's closer than the farthest of the candidates
-
         map.push({
           index,
 
           distance: thisDistance,
 
           label: otherPointLabel,
-        }); // Sort the map so the closest is first
+        });
 
-        map.sort((a, b) => (a.distance < b.distance ? -1 : 1)); // If the map became too long, drop the farthest item
-
+        map.sort((a, b) => (a.distance < b.distance ? -1 : 1));
         if (map.length > this.k) {
           map.pop();
-        } // Update this value for the next comparison
+        }
 
         maxDistanceInMap = map[map.length - 1].distance;
       }
@@ -68,15 +65,11 @@ class KNN {
 
     const votes = map.slice(0, this.k);
 
-    const voteCounts = votes
-
-      // Reduces into an object like {label: voteCount}
-
-      .reduce(
-        (obj, vote) =>
-          Object.assign({}, obj, { [vote.label]: (obj[vote.label] || 0) + 1 }),
-        {}
-      );
+    const voteCounts = votes.reduce(
+      (obj, vote) =>
+        Object.assign({}, obj, { [vote.label]: (obj[vote.label] || 0) + 1 }),
+      {}
+    );
 
     const sortedVotes = Object.keys(voteCounts)
 

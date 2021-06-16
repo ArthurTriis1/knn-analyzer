@@ -61,11 +61,6 @@ class KnnTester {
 
   result() {
     return {
-      // testDetails: {
-      //   countClass: this.countNegativeClass + this.countPositiveClass,
-      //   countNegativeClass: this.countNegativeClass,
-      //   countPositiveClass: this.countPositiveClass,
-      // },
       asserts: this.asserts,
       errors: this.errors,
       confusion: {
